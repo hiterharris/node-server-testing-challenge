@@ -13,11 +13,11 @@ describe('users router', function() {
             });
         });
 
-        it('should return cohorts as the router', function() {
-            return request(server).get('/api/users').then(res => {
-                expect(res.body.router).toBe('users');
-            });
-        });
+        // it('should return cohorts as the router', function() {
+        //     return request(server).get('/api/users').then(res => {
+        //         expect(res.body.router).toBe('users');
+        //     });
+        // });
 
         it('should return JSON formatted body', function() {
             return request(server).get('/api/users').then(res => {
